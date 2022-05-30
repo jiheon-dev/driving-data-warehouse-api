@@ -14,4 +14,20 @@ connection.on("error", (error) =>
     console.error("mongodb connect failed\n" + error)
 );
 
-module.exports = { Ngsim }
+const getCollections = () => {
+    let collections = mongoose.connections[0].collections
+    let names = [];
+
+    Object.keys(collections).forEach((k) => {
+        names.push(k);
+    })
+    return names;
+}
+
+const getCollectionDetails = (collectionName) => {
+    let collections = mongoose.connections[0].collections;
+    console.log(collections[collectionName])
+    return collections[collectionName];
+}
+
+module.exports = { Ngsim, getCollections, getCollectionDetails }
