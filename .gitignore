@@ -1,3 +1,6 @@
 meetings/
 .DS_Store
 sample-driving-data/datasets
+node_modules
+newfile.json
+.env
