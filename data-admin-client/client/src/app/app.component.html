@@ -4,7 +4,7 @@
       <div class="side_top">
         <div class="title">
           <h2 (click)="openDashBoard()">
-            <i nz-icon nzType="code" nzTheme="outline"></i> Mongo GUI
+            <i nz-icon nzType="code" nzTheme="outline"></i> Driving Data Warehouse
           </h2>
         </div>
       </div>
@@ -51,11 +51,11 @@
           </li>
         </ul>
       </div>
-      <div>
+      <!-- <div>
         <a nzType="link" (click)="openModal('addDB', {})" class="spl-button add-db-btn">
           <i nz-icon nzType="plus" nzTheme="outline"></i>Add Database
         </a>
-      </div>
+      </div> -->
     </div>
   </nz-sider>
   <nz-layout class="right-layout">
@@ -114,15 +114,8 @@
 
       <div style="padding: 10px;" *ngIf="(!tabs || tabs.length == 0) && active == 'databases'">
         <nz-tag nzColor="#211F1F">
-          <a href="https://github.com/arunbandari/mongo-gui" target="_blank">
-            <i nz-icon nzType="github"></i>
-            <span> GitHub</span>
-          </a>
-        </nz-tag>
-        <nz-tag nzColor="#c00">
-          <a href="https://www.npmjs.com/package/mongo-gui" target="_blank">
-            <i nz-icon></i>
-            <span>npm</span>
+          <a href="https://wise.ajou.ac.kr" target="_blank">
+            <span>WISE Lab</span>
           </a>
         </nz-tag>
       </div>

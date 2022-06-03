@@ -27,6 +27,7 @@
     "build-ui": "cd client && npm run clean-build-compress"
   },
   "dependencies": {
+    "@angular-devkit/build-angular": "^13.3.7",
     "body-parser": "^1.19.0",
     "bson": "^4.0.3",
     "connect-gzip-static": "^2.1.1",
